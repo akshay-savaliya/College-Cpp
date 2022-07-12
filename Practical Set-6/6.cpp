@@ -71,7 +71,7 @@ int main()
     d2.dispdata();
 
     d1 < d2;
-    d1 > d1;
+    d1 > d2;
     d1 == d2;
     d1 != d2;
 
