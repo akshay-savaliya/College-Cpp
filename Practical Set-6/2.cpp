@@ -84,7 +84,7 @@ public:
 
 int main()
 {
-    matrix m1, m2, m3, m4, m5;
+    matrix m1, m2, temp;
     cout << "Enter a Matrix 1 : " << endl;
     m1.getdata();
     cout << "Enter a Matrix 2 : " << endl;
@@ -94,13 +94,13 @@ int main()
     cout << "Matrix 2 : " << endl;
     m2.dispdata();
     cout << "Matrix 1 + Matrix 2 : " << endl;
-    m3 = m1 + m2;
-    m3.dispdata();
+    temp = m1 + m2;
+    temp.dispdata();
     cout << "Matrix 1 - Matrix 2 : " << endl;
-    m4 = m1 - m2;
-    m4.dispdata();
+    temp = m1 - m2;
+    temp.dispdata();
     cout << "Matrix 1 * Matrix 2 : " << endl;
-    m5 = m1 * m2;
-    m5.dispdata();
+    temp = m1 * m2;
+    temp.dispdata();
     return 0;
 }
