@@ -33,7 +33,7 @@ public:
     // {
     //     feet = feet + x.feet;
     //     inches = inches + x.inches;
-    //     if (inches > 12)
+    //     while (inches >= 12)
     //     {
     //         inches = inches - 12;
     //         feet++;
@@ -47,7 +47,7 @@ public:
     //     distance temp;
     //     temp.feet = feet + x.feet;
     //     temp.inches = inches + x.inches;
-    //     if (temp.inches > 12)
+    //     while (temp.inches >= 12)
     //     {
     //         temp.inches = temp.inches - 12;
     //         temp.feet++;
@@ -61,7 +61,7 @@ public:
     {
         feet = x.feet + y.feet;
         inches = x.inches + y.inches;
-        if (inches > 12)
+        while (inches >= 12)
         {
             inches = inches - 12;
             feet++;
