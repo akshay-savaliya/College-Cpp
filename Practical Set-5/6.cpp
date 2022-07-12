@@ -3,15 +3,14 @@ using namespace std;
 
 class matrix
 {
-    int n=3;
     int a[3][3];
 
 public:
     matrix()
     {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < 3; j++)
             {
                 a[i][j] = 0;
             }
@@ -22,9 +21,9 @@ public:
     }
     void getdata()
     {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < 3; j++)
             {
                 cin >> a[i][j];
             }
@@ -32,9 +31,9 @@ public:
     }
     void dispdata()
     {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < 3; j++)
             {
                 cout << a[i][j];
                 cout << " ";
@@ -44,9 +43,9 @@ public:
     }
     void add(matrix x, matrix y)
     {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < 3; j++)
             {
                 a[i][j] = x.a[i][j] + y.a[i][j];
             }
@@ -54,9 +53,9 @@ public:
     }
     void subtraction(matrix x, matrix y)
     {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < 3; j++)
             {
                 a[i][j] = x.a[i][j] - y.a[i][j];
             }
@@ -64,11 +63,11 @@ public:
     }
     void multiplication(matrix x, matrix y)
     {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < 3; j++)
             {
-                for (int k = 0; k < n; k++)
+                for (int k = 0; k < 3; k++)
                 {
                     a[i][j] += x.a[i][k] * y.a[k][j];
                 }
