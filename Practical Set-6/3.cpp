@@ -90,4 +90,6 @@ int main()
     }
     else
         std::cout << "Invalid date input\n";
+    
+    return 0;
 }
